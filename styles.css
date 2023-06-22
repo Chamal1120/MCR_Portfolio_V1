@@ -180,6 +180,19 @@ header {
   font-family: "Montserrat", sans-serif;
 }
 
+.project-card button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #555;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+}
+
+.project-card button:hover {
+  background-color: #888;
+}
 /* Contact section */
 #contact {
   padding: 100px 20px;
