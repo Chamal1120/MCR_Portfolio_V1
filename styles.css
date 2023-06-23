@@ -239,7 +239,7 @@ header {
 
 .contact-content input,
 .contact-content textarea {
-  width: 98%;
+  width: 100%;
   padding: 10px;
   border: 2px solid #ccc;
   border-radius: 4px;
