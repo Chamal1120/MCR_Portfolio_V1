@@ -22,9 +22,8 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  height: 10%;
   width: 100%;
-  z-index: 100;
+  z-index: 1;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -71,8 +70,7 @@ header {
   color: #fff;
   font-family: "Montserrat", sans-serif;
   background-image: url("img/heromainbg3.jpg");
-  background-size: 1250px;
-  background-position: 50% -200%;
+  background-size: cover;
   border-radius: 15px;
   border: 4px solid #1a0656;
 }
@@ -80,15 +78,12 @@ header {
 .hero-content h1 {
   font-size: 36px;
   margin-bottom: 20px;
-  color: #fff;
   font-family: "Montserrat", sans-serif;
-  position: relative;
-  z-index: 1;
 }
 
 .hero-content p {
-  position: relative;
-  z-index: 1;
+  margin-bottom: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
 .cta-button {
@@ -101,15 +96,12 @@ header {
   font-weight: bold;
   transition: background-color 0.3s ease;
   font-family: "Montserrat", sans-serif;
-  position: relative;
-  z-index: 2;
+  margin-top: 20px;
 }
 
 .cta-button:hover {
   background-color: #000066;
   font-family: "Montserrat", sans-serif;
-  position: relative;
-  z-index: 2;
 }
 
 /* About section */
@@ -162,7 +154,7 @@ header {
 /* Projects section */
 #projects {
   background-color: #b8b8ec;
-  padding: 100px 20px;
+  padding: 50px 20px;
   color: #fff;
   font-family: "Montserrat", sans-serif;
   border-radius: 15px;
@@ -176,7 +168,7 @@ header {
 
 .projects-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 40px;
   font-family: "Montserrat", sans-serif;
 }
@@ -213,7 +205,7 @@ header {
 /* Charity Section */
 #non-coding-projects {
   background-color: #b8b8ec;
-  padding: 10px 20px;
+  padding: 20px;
   color: #fff;
   font-family: "Montserrat", sans-serif;
   border-radius: 15px;
@@ -222,7 +214,8 @@ header {
 
 /* Contact section */
 #contact {
-  padding: 50px 20px;
+  padding: 20px;
+  max-width: 100%;
   background-color: #b8b8ec;
   color: #fff;
   font-family: "Montserrat", sans-serif;
@@ -231,15 +224,15 @@ header {
 }
 
 .contact-content form {
+  max-width: 100%;
   display: grid;
-  grid-template-columns: 1fr;
   gap: 20px;
   font-family: "Montserrat", sans-serif;
 }
 
 .contact-content input,
 .contact-content textarea {
-  width: 50%;
+  width: 100%;
   padding: 10px;
   border: 2px solid #ccc;
   border-radius: 4px;
