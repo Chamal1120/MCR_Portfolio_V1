@@ -86,6 +86,28 @@ header {
   font-family: "Montserrat", sans-serif;
 }
 
+.name {
+  background-color: #1a0656;
+  color: white;
+  padding: 0 5px;
+  border-radius: 2px;
+}
+
+.name2 {
+  background-color: rgba(0, 0, 0, 0.53);
+  color: #ffffff;
+  padding: 0 5px;
+  border-radius: 4px;
+}
+
+.name3 {
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  padding: 0 5px;
+  padding-right: 0px;
+  border-radius: 4px;
+}
+
 .cta-button {
   display: inline-block;
   background-color: #000033;
