@@ -7,6 +7,7 @@ body {
 p {
   text-align: justify;
   line-height: 2;
+  display: block;
 }
 
 a {
@@ -53,14 +54,34 @@ header {
 }
 
 .nav-links a {
+  font-size: 20px;
   color: #b8b8ec;
   font-family: "Montserrat", sans-serif;
+  font-weight: 550;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 3px;
+  background-color: #8585d9;
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
+}
+
+.nav-links a:hover::after {
+  background-color: white;
+  transform: scaleX(1);
 }
 
 /* Hero section */
 #hero {
   position: relative;
-  padding: 100px 20px 30px;
+  padding: 10px 20px 30px;
   height: 450px;
   display: flex;
   flex-direction: column;
@@ -69,7 +90,7 @@ header {
   text-align: center;
   color: #fff;
   font-family: "Montserrat", sans-serif;
-  background-image: url("img/heromainbg3.jpg");
+  background-image: url("img/heromainbg.jpg");
   background-size: cover;
   border-radius: 30px;
   border: 4px solid #1a0656;
@@ -119,58 +140,118 @@ header {
   transition: background-color 0.3s ease;
   font-family: "Montserrat", sans-serif;
   margin-top: 20px;
+  transition: transform 0.3s ease;
+  transform-origin: center;
 }
 
 .cta-button:hover {
   background-color: #000066;
   font-family: "Montserrat", sans-serif;
+  transform: scale(1.01);
 }
 
 /* About section */
 #about {
   padding: 20px;
-  height: 650px;
-  position: relative;
-  background-image: url("img/aboutbg2.jpg");
+  height: 630px;
+  background-image: url("img/aboutbg.jpg");
   background-color: #b8b8ec;
   color: #fff;
   font-family: "Montserrat", sans-serif;
   border-radius: 30px;
   border: 4px solid #1a0656;
-}
-
-.section-heading h1 {
-  position: absolute;
-  left: 90px;
-  margin-top: 80px;
-  margin-bottom: 10px;
-  margin-left: 350px;
-  font-size: 50px;
-  font-family: "Source Code Pro", monospace;
-}
-
-.about-content {
-  position: relative;
-  top: 70px;
   display: flex;
-  align-items: start;
-  margin: 60px;
+}
+
+.about-follow p{
+  padding-left: 20px;
+  width: 57%;
+  font-weight: bold;
+  font-size:20px;
   color: #1a0656;
+  background-color: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(2px);
+  border-radius: 10px;
+}
+.social-media-icons{
+  padding-left: 10px;
+  font-size: 25px;
 }
 
-.about-text {
-  position: absolute;
-  top: 100px;
-  left: 350px;
+.social-media-icons i {
+  transition: transform 0.3s ease;
 }
 
-.section-heading img {
-  position: absolute;
-  top: 170px;
-  left: -10px;
+.social-media-icons i:hover {
+  transform: scale(1.2);
+}
+
+.about-follow a{
+  padding: 1px;
+}
+
+.left-column {
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.right-column {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-heading-1{
+  margin-top: 100px;
+  padding-left: 10px;
+  font-size: 40px;
+  font-family: "Source Code Pro", monospace;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #1a0656;
+  background-color: #ffffff;
+  border-right: 2px solid #1a0656;
+  animation: typing 5s steps(40,end) forwards;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+    white-space: nowrap;
+  }
+  100% {
+    width: 100%;
+    white-space: normal;
+  }
+}
+
+
+
+.about-content p {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-right: 60px;
+  margin-top: 40px;
+  color: #1a0656;
+  background-color: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(2px);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.section-img {
+  margin-top: 60px;
+  margin-right: 0;
   height: 450px;
   width: 450px;
-  border-radius: 50%;
 }
 
 /* Projects section */
@@ -201,6 +282,12 @@ header {
   border-radius: 30px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   font-family: "Montserrat", sans-serif;
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
 }
 
 .project-card img {
@@ -208,6 +295,11 @@ header {
   border-radius: 15px;
   margin-bottom: 20px;
   font-family: "Montserrat", sans-serif;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.01);
 }
 
 .project-card button {
@@ -218,10 +310,13 @@ header {
   text-decoration: none;
   border: none;
   border-radius: 10px;
+  transition: background-color 0.3s ease;
+  font-family: "Montserrat", sans-serif;
 }
 
 .project-card button:hover {
-  background-color: #707070;
+  background-color: #cecef8;
+  transform: scale(1.03);
 }
 
 /* Charity Section */
@@ -272,17 +367,21 @@ header {
   font-weight: bold;
   transition: background-color 0.3s ease;
   font-family: "Montserrat", sans-serif;
+  transition: transform 0.3s ease;
+  transform-origin: center;
 }
 
 .contact-content button:hover {
   background-color: #000066;
   font-family: "Montserrat", sans-serif;
+  transform: scale(1.01);
 }
 
 /* Footer */
 footer {
-  background-color: #b8b8ec;
-  color: #000000;
+  background-color: #0e0431;
+  flex-direction: column;
+  color: #ffffff;
   padding: 20px;
   text-align: center;
   font-family: "Montserrat", sans-serif;
@@ -298,22 +397,10 @@ footer {
   font-family: "Montserrat", sans-serif;
 }
 
-.footer-text {
-  margin: 10px;
-  font-size: 14px;
-  color: #fff;
-  font-family: "Montserrat", sans-serif;
-}
-
-.footer-icon {
-  margin-right: 5px;
-  color: #fff;
-  font-family: "Montserrat", sans-serif;
-}
-
-.footer-text a {
-  color: #fff;
-  font-family: "Montserrat", sans-serif;
+.footer-content p{
+  font-size: 12px;
+  margin-bottom: 1px;
+  margin-top: -2px;
 }
 
 /* Smooth Scrolling */

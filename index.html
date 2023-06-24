@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <title>My Portfolio</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
@@ -25,14 +26,34 @@
 </section>
 
 <section id="about">
-  <div class="section-heading">
-    <h1>A little bit about Me</h1>
-    <img src="img/profile-pic3.png" alt="Profile Picture">
+  <div class="left-column">
+    <h1 class="section-heading-1">A little bit about Me</h1>
+    <div class="about-content">
+      <p>I am a coding enthusiast with experience in HTML, CSS, JavaScript, React.js and Node.js.
+        I talk about #newgentech and #developercommunity. On top of that I have years of graphic
+        designing skills which combine with my coding skills to deliver visually pleasing outputs.
+        In my spare time, I enjoy giving life to new project ideas and supporting and nourishing
+        the next generation with up to date IT knowledge. With a keen eye for detail and a passion for coding,
+        I strive to innovate while inspiring others around me .</p>
+    </div>
+    <div class="about-follow">
+      <p>
+        find me on
+        <span class="social-media-icons">
+          <a href="https://www.linkedin.com/in/chamal-randika/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/Chamal1120" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.instagram.com/chamal_randika_/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/Chamal.Randika.MCR/" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://brewitinside.blogspot.com/" target="_blank"><i class="fab fa-blogger"></i></a>
+          <a href="https://www.youtube.com/@AestheticAMV" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.youtube.com/@AestheticAMV" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://discord.gg/MTH6c8gt" target="_blank"><i class="fab fa-discord"></i></a>
+        </span>
+      </p>
+    </div>
   </div>
-  <div class="about-content">
-    <p class="about-text">I am a web developer with experience in HTML, CSS,JavaScript and React.js and Node.js.
-      I enjoy designing and building user-friendly websites that provide a great user experience.
-      With a keen eye for detail and a passion for coding, I strive to create elegant and efficient solutions.</p>
+  <div class="right-column">
+    <img class="section-img" src="img/profile-pic3.png" alt="Profile Picture">
   </div>
 </section>
 
@@ -101,16 +122,18 @@
     <h2>Contact Me</h2>
   </div>
   <div class="contact-content">
-    <form>
-      <input type="text" placeholder="Name">
-      <input type="email" placeholder="Email">
-      <textarea placeholder="Message"></textarea>
+    <form action="https://formspree.io/f/meqbjonr" method="POST">
+      <input type="text" name="Name" placeholder="Name">
+      <input type="email" name="Email" placeholder="Email">
+      <input type="text" name="subject" placeholder="Subject">
+      <textarea name="Message" placeholder="Message"></textarea>
       <button type="submit">Send Message</button>
     </form>
   </div>
 </section>
 
-<footer>
+<footer class="footer-content">
+  <p>Made with &#x2764; by Chamal Randika using pure HTML and CSS.</p>
   <p>&copy; 2023 @ChamalRandika. All rights reserved.</p>
 </footer>
 </body>
