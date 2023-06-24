@@ -6,7 +6,7 @@ body {
 
 p {
   text-align: justify;
-  line-height: 2;
+  line-height: 1.5;
   display: block;
 }
 
@@ -82,7 +82,7 @@ header {
 #hero {
   position: relative;
   padding: 10px 20px 30px;
-  height: 450px;
+  height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -140,8 +140,11 @@ header {
   transition: background-color 0.3s ease;
   font-family: "Montserrat", sans-serif;
   margin-top: 20px;
-  transition: transform 0.3s ease;
   transform-origin: center;
+}
+
+.cta-button {
+  transition: transform 0.3s ease;
 }
 
 .cta-button:hover {
@@ -153,11 +156,12 @@ header {
 /* About section */
 #about {
   padding: 20px;
-  height: 630px;
+  height: 600px;
   background-image: url("img/aboutbg.jpg");
   background-color: #b8b8ec;
   color: #fff;
   font-family: "Montserrat", sans-serif;
+  line-height: 1;
   border-radius: 30px;
   border: 4px solid #1a0656;
   display: flex;
@@ -165,17 +169,20 @@ header {
 
 .about-follow p{
   padding-left: 20px;
-  width: 57%;
+  padding-right: 20px;
   font-weight: bold;
   font-size:20px;
   color: #1a0656;
   background-color: rgba(255, 255, 255, 0.65);
   backdrop-filter: blur(2px);
   border-radius: 10px;
+  display: inline-block;
+  width: auto;
 }
 .social-media-icons{
   padding-left: 10px;
   font-size: 25px;
+  display: inline-block;
 }
 
 .social-media-icons i {
@@ -191,7 +198,7 @@ header {
 }
 
 .left-column {
-  width: 60%;
+  width: 70%;
   justify-content: center;
   align-items: center;
 
@@ -215,6 +222,8 @@ header {
   background-color: #ffffff;
   border-right: 2px solid #1a0656;
   animation: typing 5s steps(40,end) forwards;
+  display: inline-block;
+  width: auto;
 }
 
 @keyframes typing {
@@ -239,7 +248,7 @@ header {
   justify-content: space-between;
   align-items: start;
   margin-right: 60px;
-  margin-top: 40px;
+  margin-top: 0;
   color: #1a0656;
   background-color: rgba(255, 255, 255, 0.65);
   backdrop-filter: blur(2px);
@@ -257,6 +266,7 @@ header {
 /* Projects section */
 #projects {
   background-color: #b8b8ec;
+  height: 600px;
   padding: 50px 20px;
   color: #fff;
   font-family: "Montserrat", sans-serif;
@@ -322,6 +332,7 @@ header {
 /* Charity Section */
 #non-coding-projects {
   background-color: #b8b8ec;
+  height: 700px;
   padding: 20px;
   color: #fff;
   font-family: "Montserrat", sans-serif;
