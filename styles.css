@@ -91,6 +91,7 @@ header {
   color: #fff;
   font-family: "Montserrat", sans-serif;
   background-image: url("img/heromainbg.jpg");
+  background-position: center;
   background-size: cover;
   border-radius: 30px;
   border: 4px solid #1a0656;
@@ -270,6 +271,9 @@ header {
   padding: 50px 20px;
   color: #fff;
   font-family: "Montserrat", sans-serif;
+  background-image: url("img/projectsbg.jpg");
+  background-position:center ;
+  background-size: cover;
   border-radius: 30px;
   border: 4px solid #1a0656;
 }
@@ -277,6 +281,11 @@ header {
 .section-heading {
   font-size: 25px;
   color: #1a0656;
+}
+
+.section-heading-2{
+  color: white;
+  font-size: 25px;
 }
 
 .projects-content {
@@ -337,6 +346,9 @@ header {
   color: #fff;
   font-family: "Montserrat", sans-serif;
   border-radius: 30px;
+  background-image: url("img/charitybg.jpg");
+  background-position:center ;
+  background-size: cover;
   border: 4px solid #1a0656;
 }
 
@@ -348,7 +360,15 @@ header {
   color: #fff;
   font-family: "Montserrat", sans-serif;
   border-radius: 30px;
+  background-image: url("img/contactbg.jpg");
+  background-position:center ;
+  background-size: cover;
   border: 4px solid #1a0656;
+}
+
+.section-heading-3{
+  color: white;
+  font-size: 25px;
 }
 
 .contact-content form {
