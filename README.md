@@ -10,4 +10,4 @@
 Thanks to,
 * W3Schools
 * JetBrains
-* 8ChatGPT
+* ChatGPT
